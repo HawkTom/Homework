@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 -  **Consider a logistic regression with two classes**
 
 - **Having a classifier G,  the probabilities are in the case ofen assumed to take form**
