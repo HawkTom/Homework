@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 -  **Consider a logistic regression with two classes**
 
 - **Having a classifier G,  the probabilities are in the case ofen assumed to take form**
@@ -28,8 +26,8 @@
 
   **2. Determine whether the objective is concave(since we maximize, we are interested in concavity, not convexity. It is just a multiplication by -1)**
 
-  *Sol:*  
+  *Sol:*  The likelihood function is concave.[http://web.engr.oregonstate.edu/~xfern/classes/cs534/notes/logistic-regression-note.pdf]
 
   **3. What does it mean for (the potential) uniqueness of the problem?**
 
-  *Sol:*  fuck
+  *Sol:*  The existence, finiteness, and uniqueness of maximum likelihood estimates  for the logistic regression model depend on the patterns of data points in the observaation space. The maximum likelihood estimation for logistic regression can break down when training on linearly separable data. This means that maximum likelihood eatimation will select parameter values of infinite magnitude,  and wil allow for many different possible parameter values. [https://www.cs.ubc.ca/~arnaud/cs340/HW5_q2.pdf]
