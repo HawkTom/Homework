@@ -1,3 +1,13 @@
+### AAI Homework 
+
+---
+
+Student ID: 11749248 
+
+Name: TongHao  
+
+---
+
 -  **Consider a logistic regression with two classes**
 
 - **Having a classifier G,  the probabilities are in the case ofen assumed to take form**
@@ -22,12 +32,38 @@
 
   ​	The objective function is the log-likelihood. Because of the monotone increasing of log function, the log-likelihood fucntion will not change the properties of likelihood function. 
 
-  ​	And we maxmimize the likelihood because we maximize fit of our model to data under an implicit assumption that the observed data are at the same time most  likely data.
+  ​	And we maximize the likelihood because we maximize fit of our model to data under an implicit assumption that the observed data are at the same time most  likely data.
 
   **2. Determine whether the objective is concave(since we maximize, we are interested in concavity, not convexity. It is just a multiplication by -1)**
 
-  *Sol:*  The likelihood function is concave.[http://web.engr.oregonstate.edu/~xfern/classes/cs534/notes/logistic-regression-note.pdf]
+  *Sol:*  
+  $$
+  L_i(w) = log(x_i, w)^{y_i}(1-g(x_i, w))^{1-y_i} = y_ilog\ g(x_i, w)  + (1-y_i)log(1-g(x_i, w)) 
+  $$
+  where $g(x, w) = \frac{1}{1+e^{-w^Tx}}$
+
+  Taking gradient of $L_i$ with respect to w, we have
+  $$
+  \begin{align}
+  \bigtriangledown _\textbf wL_i &=\frac{y_i}{g(\textbf x_i,\textbf w)}\bigtriangledown _\textbf wg-\frac{1--y_i}{1-g(\textbf x_i, \textbf w)}\bigtriangledown _\textbf wg\\
+  & = \frac{y_i}{g}g(1-g)\textbf x_i - \frac{1-y_i}{1-g}g(1-g)\textbf x_i\\
+  & = (y_i(1-g)-(1-y_i)g)\textbf x_i \\
+  & = (y_i - y_ig-g+y_ig)\textbf x_i \\
+  & = (y_i-g(\textbf x_i, \textbf w))\textbf x_i
+  \end{align}
+  $$
+  Consider all training examples, we have:
+  $$
+  \bigtriangledown_\textbf wL = \sum_{i=1}^{N}(y_i-g(\textbf x_i,\textbf w))\textbf x_i
+  $$
+  The likelihood function is **concave**.
+
+  *reference*:  http://web.engr.oregonstate.edu/~xfern/classes/cs534/notes/logistic-regression-note.pdf
 
   **3. What does it mean for (the potential) uniqueness of the problem?**
 
-  *Sol:*  The existence, finiteness, and uniqueness of maximum likelihood estimates  for the logistic regression model depend on the patterns of data points in the observaation space. The maximum likelihood estimation for logistic regression can break down when training on linearly separable data. This means that maximum likelihood eatimation will select parameter values of infinite magnitude,  and wil allow for many different possible parameter values. [https://www.cs.ubc.ca/~arnaud/cs340/HW5_q2.pdf]
+  *Sol:* 
+
+  The existence, finiteness, and uniqueness of maximum likelihood estimates  for the logistic regression model depend on the patterns of data points in the observation space. The maximum likelihood estimation for logistic regression can break down when training on linearly separable data. This means that maximum likelihood estimation will select parameter values of infinite magnitude,  and will allow for many different possible parameter values. 
+
+  reference : https://www.cs.ubc.ca/~arnaud/cs340/HW5_q2.pdf
