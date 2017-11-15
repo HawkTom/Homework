@@ -59,6 +59,7 @@ Name: TongHao
   The likelihood function is **concave**.
 
   *reference*:  http://web.engr.oregonstate.edu/~xfern/classes/cs534/notes/logistic-regression-note.pdf
+  *refernece*:  https://homes.cs.washington.edu/~marcotcr/blog/concavity/
 
   **3. What does it mean for (the potential) uniqueness of the problem?**
 
