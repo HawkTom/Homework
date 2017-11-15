@@ -66,4 +66,10 @@ Name: TongHao
 
   The existence, finiteness, and uniqueness of maximum likelihood estimates  for the logistic regression model depend on the patterns of data points in the observation space. The maximum likelihood estimation for logistic regression can break down when training on linearly separable data. This means that maximum likelihood estimation will select parameter values of infinite magnitude,  and will allow for many different possible parameter values. 
 
+  reference: https://support.sas.com/documentation/cdl/en/statug/63347/HTML/default/viewer.htm#statug_logistic_sect035.htm
+
   reference : https://www.cs.ubc.ca/~arnaud/cs340/HW5_q2.pdf
+
+  ​
+
+  **Attention: answer only represent my own idea, but not the true answer. **
