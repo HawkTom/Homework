@@ -1,4 +1,4 @@
-### what is AI
+### What is AI
 
 - Thinking humanly
 - Thinking Rationally
@@ -143,7 +143,7 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
 
   >  $x_1, x_2, x_3$  with $f(x_2) < min(f(x_1),f(x_3))$, test $x_4\in [x_2, x_3]$
   >
-  > if $f(x_4) < f(x_2)$, pass to inteval $[x_2, x_3]$ ortherwise pass to $[x_3, x_3]$
+  >  if $f(x_4) < f(x_2)$, pass to inteval $[x_2, x_3]$ ortherwise pass to $[x_3, x_3]$
 
 - Nelder-Mead method
 
@@ -163,17 +163,79 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
 
   > Individual representation: 
   >
-  > Crossover:
+  > Crossover:  between two or more parents
   >
-  > Mutation:
+  > Mutation: single parent variation , small random changes to individual genes
   >
   > Selection:
   >
-  > - Fittness proportionate selection
-  > - ranking selection
-  > - tournament selection
+  > - Fitness proportionate selection:  select individual with probability $p_i = \frac{F(x_i)}{\sum F(x_j)}$ (Roulette wheel selection )
+  > - ranking selection: sort population, for each individual assign probability $p_i = G(i)$
+  > - tournament selection: randomly pick k individuals from the population select the highest fitness
 
 - Niching
+
+  > motivation: close points does not contribute to the algorithm much
+  >
+  > Goal:  spread points across the whole search space
+  >
+  > basic techniques:
+  >
+  > - sharing: modified the raw fitness by considering near points
+  > - crowding: removes nearby individuals (or prevents their creation)
+
+- Constraint handling approaches:
+
+  > Penalty function: penalize the constraint violation <class = "fa fa-star">
+  >
+  > Repair approach: similar to the projection approach   <class = "fa fa-star">
+  >
+  > Purist approach: Reject all infeasible points
+  >
+  > Separatist approach: Consider the objective and constraints separately
+  >
+  > Hybrid approach: Combination of the methods above
+
+- Multi-objective programming
+
+  > Dominance: $\forall i\in \{1,...n\}, a\leq b$   **and **  $\exists \in\{1,...,n\}, a<b$ 
+  >
+  > non-dominated:  there is no point $x_2$ such that $x_2\  dominates\ \ x_1$  
+  >
+  > Pareto front: set of all non-dominated points
+  >
+  > Method: 
+  >
+  > - reformulate into one objective
+  >
+  >   >scalarization : 
+  >   >
+  >   >$\varepsilon $ - constrained method
+  >   >
+  >   >Goal programming
+  >
+  > - Multi-object genetic algorithms
+  >
+  > - NSGA-II (Non-dominated Sort Genetic Algorithm II)
+  >
+  >   ```C
+  >   Initialize population of size n
+  >   Non-dominated sort: 
+  >   1. find pareto front in current population
+  >   2. From the rest find all non-dominated individuals and form second front
+  >   3. repeat till points remain
+  >   Fitess evaluation and crowding distance
+  >   1. assign fitness as the rank of the front
+  >   2. crowding distance measures the distance from "neighboring" points
+  >   Selection
+  >   1. tournament selection with k=2
+  >   2. first criterion is the fitness, thus lower front rank
+  >   3. when equal, individual with lower crowding distance is selected
+  >   Genetic operators
+  >   1. apply crossover and mutation based on the data representation and possibily on the knowledge
+  >   Merge parents and offspring into one population with 2n individuals
+  >   Reduce the population size by selecting n individuals by criteria specified above
+  >   ```
 
 ### Machine Learning
 
