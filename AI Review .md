@@ -138,10 +138,42 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
 ### Optimization without derivatives
 
 - Bisection method: $if\ F(a)F(b) < 0, then\ a\ solution\ exists$
+
 - Golden -section search 
+
+  >  $x_1, x_2, x_3$  with $f(x_2) < min(f(x_1),f(x_3))$, test $x_4\in [x_2, x_3]$
+  >
+  > if $f(x_4) < f(x_2)$, pass to inteval $[x_2, x_3]$ ortherwise pass to $[x_3, x_3]$
+
 - Nelder-Mead method
+
+  - reflected, expanded, contracted
+
 - Simulated annealing 
-- Evolutionary algorithm
+
+  > if $f(y^k) < f(x^k)$ set $x^{k+1} = y^k$
+  >
+  > if $f(y^k) > f(x^k)$ set $x^{k+1} = y^k$ with probability $P(x^k, y^k, T^k)$, and $x^{k+1} = x^k$ with probablity $1-P(x^k, y^k, T^k)$ 
+
+-  Evolutionary algorithm
+
+  > Exploration :  move to unknown territories, discover better
+  >
+  > Exploitation: stay close and explore the neighborhood
+
+  > Individual representation: 
+  >
+  > Crossover:
+  >
+  > Mutation:
+  >
+  > Selection:
+  >
+  > - Fittness proportionate selection
+  > - ranking selection
+  > - tournament selection
+
+- Niching
 
 ### Machine Learning
 
