@@ -20,8 +20,8 @@
 
   - Completeness: Does it always find a solution if it exists
   - Optimality: Does it always find the least-cost solution
-  - Time complexity: # nodes generated / expanded
-  - maximum #nodes in memory
+  - Time complexity:  nodes generated  expanded
+  - maximum nodes in memory
 
 - Uniformed Search Methods
 
@@ -29,9 +29,7 @@
 
     - Costs in the search tree is same
 
-
     - Expand the shallowest unexpanded node
-
   - UCS: Uniform-cost search
 
     - Expand the cheapest unexpected node
@@ -186,9 +184,9 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
 
 - Constraint handling approaches:
 
-  > Penalty function: penalize the constraint violation <class = "fa fa-star">
+  > Penalty function: penalize the constraint violation 🙌
   >
-  > Repair approach: similar to the projection approach   <class = "fa fa-star">
+  > Repair approach: similar to the projection approach  🙌
   >
   > Purist approach: Reject all infeasible points
   >
@@ -239,6 +237,15 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
 
 ### Machine Learning
 
+- Types:
+
+  > Supervised learning
+  >
+  > unsupervised learning
+  >
+  > semi-supervised learning 
+
+
 - > Under-fitting:  high training error and high test error
   >
   > - deal:  set a more complex model
@@ -249,15 +256,198 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
   > - regularization: penalize certain parts of the parameter space
   > - get more data
 
-- Linear Model
+- Linear Model (detail)  🙌
 
-- Tree Model
+  - Univariate Linear Regression (ULR)
+
+    > Model Formulation:  Linear Model $h_w(x) = w_0 + w_1x$
+    >
+    > Optimization: $min_wL(w) = \frac{1}{2}\sum_{n=1}^{N}[y^{n} - (w_1x^n+w_0)]^2$
+    >
+    > - closed form solution:  First order equations  equal to zero
+    >
+    > - Iterative solution:  
+    >
+    >   > Batch GD: update w once with all training data
+    >   >
+    >   > Stochastic GD: update w N times with one training data at a time
+    >   >
+    >   > Mini-batch GD: update w several times with a subset of D for one update
+
+  - Multivariate Linear Regression (MLR)
+
+    > Model Formulation: Linear model $h_w(x) = w_0 + w_1x+...+w_mx_m = \textbf w^T\textbf x$
+    >
+    > Optimization: $min_\textbf wL(\textbf w) = \frac{1}{2}\sum_{n=1}^{N}[y^{n} -\textbf w^T\textbf x^n]^2$
+    >
+    > - closed-form solution:  $\textbf w = (\textbf X^T\textbf X)^{-1}\textbf  X^T \textbf y$ 
+    > - (how about the solution when adding the regularization) :question::question::question:**$\textbf w = (\textbf X^T\textbf X+\lambda I)^{-1}\textbf  X^T \textbf y$**
+    > - Iterative Solution
+    >
+    > Over-fitting for MLR: Regularization: $min_wL_{tr}(w) + \lambda \Omega(w)$ and $\Omega(w) = \sum_i|w_i|^p$
+
+  - Multivariate Linear Classification (MLC)
+
+    > Aim: find the optimal W fitting the observations in D
+    >
+    > Optimization: $min_wL(w) = \frac{1}{2N}\sum_{n=1}^{N}[y^n-h_w(x^n)]^2$
+    >
+    > MLR Model: $h_w(x) = w^Tx$
+    >
+    > Problem: can not constrain 0/1 output
+    >
+    > - Hard-threshold Linear Classifier
+    > - Logistic Regression (Soft-threshold)
+
+- Tree Model (detail)  🙌
+
+  - Decision Tree
+
+  - Information Gain: Good Feature Heuristics
+
+    > Entropy: $H(Y) = -\sum_kp(y_k)log_2p(y_k)$ 
+    >
+    > Conditional entropy:  $H(Y|X)==\sum_jp(X=x_j)H(Y|X=x_j)$
+    >
+    > Information Gain: $IG(X) = H(Y) - H(Y|X)$
+
+  - Decision Tree construction
+
+    > When to stop:
+    >
+    > - all records in current subset have the same label
+    > - all records have the same set input features
+    > - all features have small information gain
+    >
+    > Tree Over-fitting: Decision Pruning 
+
+  - Decision tree for Regression
 
 - Neural Networks
 
+  - Loss function
+  - Partial derivate for any w: "chain rule"
+  - Back propagation to train ANN
+
 - K nearest neighbour
+
+  - For classification: find k nearest neighbours of the testing point and take a vote
+
+  - For regression: take mean or median of the k nearest neighbours, or do a local regression on them. 
+
+  - Distance metric:  Manhattan Distance; Euclidean distance
+
+  - > Advantage: training is very fast,  Learn complex target functions;  do not lose information
+    >
+    > Disadvantage: slow at query time; Easily fooled by irrelevant attributes. 
 
 - Support Vector Machine 
 
 ### Theory of Learning
+
+- Bias-variance trade-off
+
+  - Difference between Optimization and Learning
+
+    > Optimization:  
+    >
+    > - assumes all data are deterministic
+    > - Computes it with high accuracy
+    >
+    > Learning :
+    >
+    > - assumes the data are stochastic (random)
+    > - performance on the test set is more important
+    > - often large datasets than in optimization
+    > - Low precision usually sufficient
+
+  - $L(x) = \sigma^2+var\ \widehat{f}(x) + bias^2\ \widehat{f}(x)$
+
+    - Loss function consists of three terms
+
+      > Irreducible error: Uncertainty in the data
+      >
+      > Squared bias: error due to simplification in the model, performance in the model.
+      >
+      > Variance: how well the method generalizes on different testing data
+
+  - Complexity choice  <img src='http://scott.fortmann-roe.com/docs/docs/BiasVariance/biasvariance.png' size=50%>
+
+- Model selection
+
+  - Learning process
+
+  - What to do when something is wrong
+
+    > Bad performance on the training set?  :arrow_right:  more complex, different model,...
+    >
+    > Good performance on the training set, bad in validation set? :arrow_right: over-fitting
+    >
+    > Good on training set, good in dev set ?  :arrow_right: done.
+
+  - Orthogonalization
+
+    - design hyper parameters which have only one function, make tuning simpler
+
+  - Input normalization
+
+    - instead $x_1, x_2,...,x_n$ consider $z_1,...z_n$
+    - $z_i = \frac{x_i-\mu}{\sigma}$    where  $\mu = \frac{1}{n}\sum x_i$ and  $\sigma^2 = \frac{1}{n-1}\sum(x_i-\mu)^2$
+
+  - Increase training set size: individuals observations have smaller impact
+
+    - how to add observations? 
+      - Gather them
+      - add artificial observations: for example flip or rotate image.
+
+  - Regularization
+
+    - possible regularization:  zero-norm, one-norm (LASSO), two-norm
+
+  - Feature selection
+
+    - Goal: reduce the number of features, set some $w_j$ to zero
+
+    - Regularization: 
+
+      > $l_2$ regularization shrinks $w_j$ towards to zero
+      >
+      > $l_1$ regularization set $w_j$ to zero if below a certain threshold
+      >
+      > $l_0$ regularization counts non-zeros in $w_j$ and tries to set as many of them to zero as possible
+
+    - Filter methods: select the active features based on some criterion 
+
+    - Wrapper methods: run the model repeatedly and subsequently add or remove features
+
+-  Implementation issues
+
+  - Early stopping
+    - don't run the algorithm for the whole time
+  - Hyper parameters choice
+    - how: fixed or randomly 
+  - Convexity 🙌
+    - convex: if all $x_1, x_2$ and $t\in(0,1)$$f(tx_1+(1-t)x_2) \leq tf(x_1)+(1-t)f(x_2)$
+    - if $f$ is differentiable, then $f$ is convex if and only if $\bigtriangledown^2f(x)$ is positive semi-definite for all $x$. 
+    - A set $A\in\mathbb{R}$ is convex if all $x_1, x_2\in A$ and $t\in (0,1)$ , $tx_1+(1-t)x_2 \in A$
+    - all linear function $f$ are convex since $\bigtriangledown^2f=0$
+    - why convexity is important
+      - the set of global minima is convex set
+      - there are no local minima
+      - For strictly convex functions (linear regression), the global minimal is unique
+
+- Other topics
+
+  - Boosting
+    - combine several weal classifiers to create a stronger one
+  - PAC learning
+    - learning studies how many examples are needed to show that all consistent hypotheses are "good"
+
+
+
+
+
+
+
+
 
