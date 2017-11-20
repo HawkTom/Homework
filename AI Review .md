@@ -121,6 +121,9 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
     - Define the Lagrangian function $ L(x;\lambda, \mu) = f(x) +\lambda^Tg(x) + \mu^Th(x)$
 
     - conditions 
+      $$
+      L(x;\lambda, \mu) = f(x) +\lambda^Tg(x) + \mu^Th(x)
+      $$
 
     - $$
       \left\{\begin{matrix}
@@ -130,6 +133,10 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
       \beta_j \geq 0
       \end{matrix}\right.
       $$
+
+    - [KKT example (homework)](KKT_example.html)   :bear:
+
+    - [KKT reference](http://www.cnblogs.com/ooon/p/5721119.html) :bear:
 
     - SQP method (sequential quadratic programming)
 
