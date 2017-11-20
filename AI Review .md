@@ -48,6 +48,7 @@
   - IDS: Iterative deepening search(IDS)
 
     - Apply DLS with increasing limits
+    - IDS is the preferred uninformed search method when the search space is large and the depth of the solution is unknown
 
   - Bidirectional search
 
@@ -61,9 +62,9 @@
 
 Heuristic function $h(n)$ estimates the cheapest cost from $n$ to Goal
 
-- (1)  $h(n) = 0$ if $n$ is the goal node
+- (1) $h(n) = 0$ if $n$ is the goal node
 - (2) nonnegative
-- (3)problem-specific
+- (3) problem-specific
 
 A 'good' heuristic can be powerful only it is a 'good' quality. It should be **admissible**
 
@@ -79,6 +80,10 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
   - expand node $n$ has the minimal $f(n) = h(n) + g(n)$
   - It is complete. And it is optimal. 
   - **the prove of optimality if A***
+- Generate admissible heuristics
+  - from relaxed problems
+  - from sub-problem
+  - from experience
 
 ### Optimization
 
