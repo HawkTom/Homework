@@ -167,6 +167,19 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
 
 -  Evolutionary algorithm
 
+  ```Ruby
+  set initial population P(0)
+  for k=0,1...K do
+    evaluate the fitness of all individuals in P(k)
+    based on fitness select the parrents
+    generate offsprings using crossover, mutation,...
+    form new population P(k+1)
+    if terminatin satisfied then 
+      break
+    end if
+  end for
+  ```
+
   > Exploration :  move to unknown territories, discover better
   >
   > Exploitation: stay close and explore the neighborhood
@@ -214,13 +227,19 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
   >
   > Pareto front: set of all non-dominated points
   >
+  > <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Front_pareto.svg" width="50%">
+  >
   > Method: 
   >
   > - reformulate into one objective
   >
-  >   >scalarization : 
+  >   >scalarization :  $minimize\ \sum w_mf_m(x)$
   >   >
-  >   >$\varepsilon $ - constrained method
+  >   >- simple
+  >   >- difficult to choose parameters
+  >   >- only finds one point at a time
+  >   >
+  >   >$\varepsilon $ - constrained method:  $minimize\ f_{m_0}(x)$  $subject\ to\ f_m(x) \leq \varepsilon_m$  for $m \neq m_0$
   >   >
   >   >Goal programming
   >
