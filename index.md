@@ -20,5 +20,8 @@
 2. Back Propagation Details  [📖](notes/Back_Propogation.pdf)
 3. Convex Optimization Overview  [📖](http://cs229.stanford.edu/section/cs229-cvxopt.pdf)
 4. Pattern Recognition and Machine Learning Note  [📖](notes/PRML笔记-Notes on Pattern Recognition and Machine Learning.pdf)
-5. Matrix Vector derivatives for machine Learning   [📖](notes/matrix+vector+derivatives+for+machine+learning.pdf)
+5. Matrix Vector derivatives for machine Learning  
+   - **version 1** (10 pages): a summarize version in Chinese[📖](notes/matrix+vector+derivatives+for+machine+learning.pdf)
+   - **version 2** (71 pages): more details in English [📖](notes/matrixcookbook.pdf)
+
 
