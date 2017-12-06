@@ -1,5 +1,3 @@
-
-
 ### Contents
 
 [Artificial Intelligence: A Modern Approach ](https://sustech-cs-courses.github.io/AAI/)
@@ -8,11 +6,17 @@
 2. [Mid-term Review](AI Review .html)
 
 
+<br>
 
+[Machine Learning](https://sustech-cse-courses.github.io/CSE5009/)
 
-<img src="https://cdn2.ettoday.net/images/2874/d2874823.jpg">
+Text Book: 《Pattern Recognition Machine Learning》,  Bishop
 
+1.  [Homework](ML Homework/Machine Learning Solution.html)
+2.  [Code for Lab](https://github.com/HawkTom/ML_self_test)
+3.  Hessian Matrix and Function Convex [:arrow_right:](notes/Hessian矩阵是半正定的-凸函数.pdf)   *if it has tort action, contact me and delete it*
 
+<br>
 
 ### Source 
 
