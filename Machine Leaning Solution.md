@@ -30,11 +30,19 @@ Text Book: 《Pattern Recognition Machine Learning》,  Bishop
 
    only has pdf file in handwriting,   click [here](Chapter4.pdf) to get 
 
+5. **Chapter 5**
+
+   only has pdf file in handwriting,   click [here](Chapter5.pdf) to get 
+
+6. **Chapter 9**
+
+   only has pdf file in handwriting,   click [here](Chapter9.pdf) to get 
+
 <br>
 
 **Postscript**:
 
-:alarm_clock:   *Because of too many formula, it is hard for me to code into html.  So it only has pdf version in handwriting.*
+:alarm_clock:   *Because of too many formulas, it is hard for me to code into html.  So it only has pdf version in handwriting.*
 
 :alarm_clock:   *If you has any problems about solution, or find something wrong,  just contact me.*
 

@@ -3,11 +3,11 @@
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <title>Machine Leaning Solution.md</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
-html { height: 100%; font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; contain: layout paint; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) {
@@ -38,6 +38,7 @@ p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-star
 a { cursor: pointer; }
 sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+figure { max-width: 100%; overflow-x: auto; margin: 0px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -56,6 +57,7 @@ pre { white-space: pre-wrap; }
 .md-fences.mock-cm { white-space: pre-wrap; }
 .show-fences-line-number .md-fences { padding-left: 0px; }
 .show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.CodeMirror-line { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
 .footnotes + .footnotes { margin-top: -1em; }
 .md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
@@ -79,6 +81,7 @@ blockquote > :first-child { margin-top: 0px; }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > img:only-child { display: block; margin: auto; }
 p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
@@ -217,6 +220,6 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-node'><h3><a name='header-n446' class='md-header-anchor '></a>Machine Leaning Solution</h3><p>Text Book: 《Pattern Recognition Machine Learning》,  Bishop</p><p><img src="https://images.springer.com/sgw/books/medium/9780387310732.jpg"></p><p><strong>Comment</strong>: </p><p> <em>The PRML homework has official answer in pdf. <a href='http://read.pudn.com/downloads157/ebook/699944/Pattern%20Recognition%20and%20Machine%20Learning%20(Solution%20Manual)%20-%20Bishop.pdf'>here</a>.  But is is too simple to understand it, so I write it in details.  However, it doesn&#39;t conclude all the problems.</em></p><p><br></p><p><strong>Content</strong></p><ol start='' ><li><p><strong>Chapter 1</strong> </p><p>click <a href='Chapter1.html'>here</a> to see in html </p><p>click <a href='Chapter1.pdf'>here</a>  to get pdf file</p></li><li><p><strong>Chapter 2</strong></p><p>only has pdf file in handwriting,  click <a href='Chapter2.pdf'>here</a> to get</p></li><li><p><strong>Chapter 3</strong></p><p>only has pdf file in handwriting,  click <a href='Chapter3.pdf'>here</a> to get</p></li><li><p><strong>Chapter 4</strong></p><p>only has pdf file in handwriting,   click <a href='Chapter4.pdf'>here</a> to get </p></li></ol><p><br></p><p><strong>Postscript</strong>:</p><p>⏰   <em>Because of too many formula, it is hard for me to code into html.  So it only has pdf version in handwriting.</em></p><p>⏰   <em>If you has any problems about solution, or find something wrong,  just contact me.</em></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ✉️   <strong>Email:</strong>   <a href='mailto:tom_hawk@qq.com' target='_blank' >tom_hawk@qq.com</a></p></div>
+<div  id='write'  class = 'is-node'><h3><a name='header-n0' class='md-header-anchor '></a>Machine Leaning Solution</h3><p>Text Book: 《Pattern Recognition Machine Learning》,  Bishop</p><p><img src="https://images.springer.com/sgw/books/medium/9780387310732.jpg"></p><p><strong>Comment</strong>: </p><p> <em>The PRML homework has official answer in pdf. <a href='http://read.pudn.com/downloads157/ebook/699944/Pattern%20Recognition%20and%20Machine%20Learning%20(Solution%20Manual)%20-%20Bishop.pdf'>here</a>.  But is is too simple to understand it, so I write it in details.  However, it doesn&#39;t conclude all the problems.</em></p><p><br></p><p><strong>Content</strong></p><ol start='' ><li><p><strong>Chapter 1</strong> </p><p>click <a href='Chapter1.html'>here</a> to see in html </p><p>click <a href='Chapter1.pdf'>here</a>  to get pdf file</p></li><li><p><strong>Chapter 2</strong></p><p>only has pdf file in handwriting,  click <a href='Chapter2.pdf'>here</a> to get</p></li><li><p><strong>Chapter 3</strong></p><p>only has pdf file in handwriting,  click <a href='Chapter3.pdf'>here</a> to get</p></li><li><p><strong>Chapter 4</strong></p><p>only has pdf file in handwriting,   click <a href='Chapter4.pdf'>here</a> to get </p></li><li><p><strong>Chapter 5</strong></p><p>only has pdf file in handwriting,   click <a href='Chapter5.pdf'>here</a> to get </p></li><li><p><strong>Chapter 9</strong></p><p>only has pdf file in handwriting,   click <a href='Chapter9.pdf'>here</a> to get </p></li></ol><p><br></p><p><strong>Postscript</strong>:</p><p>⏰   <em>Because of too many formulas, it is hard for me to code into html.  So it only has pdf version in handwriting.</em></p><p>⏰   <em>If you has any problems about solution, or find something wrong,  just contact me.</em></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ✉️   <strong>Email:</strong>   <a href='mailto:tom_hawk@qq.com' target='_blank' >tom_hawk@qq.com</a></p></div>
 </body>
 </html>
