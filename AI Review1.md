@@ -1,3 +1,5 @@
+_By Hawk_   _2018-1-12_
+
 ### What is AI
 
 - Thinking humanly
