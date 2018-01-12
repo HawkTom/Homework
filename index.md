@@ -3,7 +3,8 @@
 [Artificial Intelligence: A Modern Approach ](https://sustech-cs-courses.github.io/AAI/)
 
 1. [Homework 8](homework8.html)
-2. [Mid-term Review](AI Review .html)
+2. [Review Part I](AI Review1.html)
+3. [Review Part II](AI Review2.html)
 
 
 <br>

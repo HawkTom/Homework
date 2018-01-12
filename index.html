@@ -3,11 +3,11 @@
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <title>index.md</title><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
-html { height: 110%;font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: 110%; bottom: 0px; top: 0px; left: 0px; right: 0px;position: fixed;  font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit;background-image:url(https://images.unsplash.com/photo-1432618131319-b57bfcaea7a7?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);background-repeat: no-repeat; background-size:100%; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; contain: layout paint; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) {
@@ -38,6 +38,7 @@ p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-star
 a { cursor: pointer; }
 sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+figure { max-width: 100%; overflow-x: auto; margin: 0px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -56,6 +57,7 @@ pre { white-space: pre-wrap; }
 .md-fences.mock-cm { white-space: pre-wrap; }
 .show-fences-line-number .md-fences { padding-left: 0px; }
 .show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.CodeMirror-line { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
 .footnotes + .footnotes { margin-top: -1em; }
 .md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
@@ -79,6 +81,7 @@ blockquote > :first-child { margin-top: 0px; }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > img:only-child { display: block; margin: auto; }
 p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
@@ -217,6 +220,6 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-node'><h3><a name='header-n0' class='md-header-anchor '></a>Contents</h3><p><a href='https://sustech-cs-courses.github.io/AAI/'>Artificial Intelligence: A Modern Approach </a></p><ol start='' ><li><a href='homework8.html'>Homework 8</a></li><li><a href='AI%20Review%20.html'>Mid-term Review</a></li></ol><p><br></p><p><a href='https://sustech-cse-courses.github.io/CSE5009/'>Machine Learning</a></p><p>Text Book: 《Pattern Recognition Machine Learning》,  Bishop</p><ol start='' ><li><a href='ML%20Homework/Machine%20Learning%20Solution.html'>Homework</a></li><li><a href='https://github.com/HawkTom/ML_self_test'>Code for Lab</a></li><li>Hessian Matrix and Function Convex <a href='notes/Hessian%E7%9F%A9%E9%98%B5%E6%98%AF%E5%8D%8A%E6%AD%A3%E5%AE%9A%E7%9A%84-%E5%87%B8%E5%87%BD%E6%95%B0.pdf'>➡️</a>   <em>if it has tort action, contact me and delete it</em></li></ol><p><br></p><h3><a name='header-n26' class='md-header-anchor '></a>Source</h3><ol start='' ><li><p>Support Vector Machine   <a href='notes/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA%E9%80%9A%E4%BF%97%E5%AF%BC%E8%AE%BA%EF%BC%88%E7%90%86%E8%A7%A3SVM%E7%9A%84%E4%B8%89%E5%B1%82%E5%A2%83%E7%95%8C%EF%BC%89Latex%E7%89%88.pdf'>📖</a></p></li><li><p>Back Propagation Details  <a href='notes/BackPropagation.pdf'>📑</a></p></li><li><p>Convex Optimization Overview  <a href='http://cs229.stanford.edu/section/cs229-cvxopt.pdf'>📖</a></p></li><li><p>Pattern Recognition and Machine Learning Note  <a href='notes/PRML%E7%AC%94%E8%AE%B0-Notes%20on%20Pattern%20Recognition%20and%20Machine%20Learning.pdf'>📑</a></p></li><li><p>Matrix Vector derivatives for machine Learning<br/></p><ul><li><strong>version 1</strong> (10 pages): a summarize version in Chinese<a href='notes/matrix+vector+derivatives+for+machine+learning.pdf'>📖</a></li><li><strong>version 2</strong> (71 pages): more details in English <a href='notes/matrixcookbook.pdf'>📖</a></li></ul></li><li><p>Conjugate Bayesian analysis of the Gaussian distribution  <a href='notes/bayesGauss.pdf'>📑</a></p></li></ol><p></p></div>
+<div  id='write'  class = 'is-node'><h3><a name='header-n0' class='md-header-anchor '></a>Contents</h3><p><a href='https://sustech-cs-courses.github.io/AAI/'>Artificial Intelligence: A Modern Approach </a></p><ol start='' ><li><a href='homework8.html'>Homework 8</a></li><li><a href='AI%20Review1.html'>Review Part I</a></li><li><a href='AI%20Review2.html'>Review Part II</a></li></ol><p><br></p><p><a href='https://sustech-cse-courses.github.io/CSE5009/'>Machine Learning</a></p><p>Text Book: 《Pattern Recognition Machine Learning》,  Bishop</p><ol start='' ><li><a href='ML%20Homework/Machine%20Learning%20Solution.html'>Homework</a></li><li><a href='https://github.com/HawkTom/ML_self_test'>Code for Lab</a></li><li>Hessian Matrix and Function Convex <a href='notes/Hessian%E7%9F%A9%E9%98%B5%E6%98%AF%E5%8D%8A%E6%AD%A3%E5%AE%9A%E7%9A%84-%E5%87%B8%E5%87%BD%E6%95%B0.pdf'>➡️</a>   <em>if it has tort action, contact me and delete it</em></li></ol><p><br></p><h3><a name='header-n29' class='md-header-anchor '></a>Source</h3><ol start='' ><li><p>Support Vector Machine   <a href='notes/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA%E9%80%9A%E4%BF%97%E5%AF%BC%E8%AE%BA%EF%BC%88%E7%90%86%E8%A7%A3SVM%E7%9A%84%E4%B8%89%E5%B1%82%E5%A2%83%E7%95%8C%EF%BC%89Latex%E7%89%88.pdf'>📖</a></p></li><li><p>Back Propagation Details  <a href='notes/BackPropagation.pdf'>📑</a></p></li><li><p>Convex Optimization Overview  <a href='http://cs229.stanford.edu/section/cs229-cvxopt.pdf'>📖</a></p></li><li><p>Pattern Recognition and Machine Learning Note  <a href='notes/PRML%E7%AC%94%E8%AE%B0-Notes%20on%20Pattern%20Recognition%20and%20Machine%20Learning.pdf'>📑</a></p></li><li><p>Matrix Vector derivatives for machine Learning<br/></p><ul><li><strong>version 1</strong> (10 pages): a summarize version in Chinese<a href='notes/matrix+vector+derivatives+for+machine+learning.pdf'>📖</a></li><li><strong>version 2</strong> (71 pages): more details in English <a href='notes/matrixcookbook.pdf'>📖</a></li></ul></li><li><p>Conjugate Bayesian analysis of the Gaussian distribution  <a href='notes/bayesGauss.pdf'>📑</a></p></li></ol><p>&nbsp;</p></div>
 </body>
 </html>
