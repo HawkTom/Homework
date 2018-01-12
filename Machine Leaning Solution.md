@@ -42,8 +42,8 @@ Text Book: 《Pattern Recognition Machine Learning》,  Bishop
 
 **Postscript**:
 
-:alarm_clock:   *Because of too many formulas, it is hard for me to code into html.  So it only has pdf version in handwriting.*
+⏰   *Because of too many formulas, it is hard for me to code into html.  So it only has pdf version in handwriting.*
 
-:alarm_clock:   *If you has any problems about solution, or find something wrong,  just contact me.*
+⏰   *If you has any problems about solution, or find something wrong,  just contact me.*
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :email:   **Email:**   tom_hawk@qq.com
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   📩**Email:** tom_hawk@qq.com
