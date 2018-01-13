@@ -1,4 +1,4 @@
-_By Hawk_   _2018-1-12_
+_By Hawk_   _update 2018-1-13_
 
 ### What is AI
 
@@ -137,11 +137,11 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
       \lambda_jg_j(x) = 0\\
       h_i(x) = 0 \\
       g_j(x) \leq 0 \\
-      \beta_j \geq 0
+      \lambda_j \geq 0
       \end{matrix}\right.
       $$
 
-    - [KKT example (homework)](KKT_example.html)   :bear:
+    - [KKT example (homework)](AI homework\KKT-example.html)   :bear:
 
     - [KKT reference](http://www.cnblogs.com/ooon/p/5721119.html) :bear:
 
@@ -155,11 +155,13 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
 
   >  $x_1, x_2, x_3$  with $f(x_2) < min(f(x_1),f(x_3))$, test $x_4\in [x_2, x_3]$
   >
-  >  if $f(x_4) < f(x_2)$, pass to inteval $[x_2, x_3]$ ortherwise pass to $[x_3, x_3]$
+  >  if $f(x_4) < f(x_2)$, pass to interval $[x_2, x_3]$ otherwise pass to $[x_1, x_4]$
 
-- Nelder-Mead method
+- Nelder-Mead method   (details in Slides)
 
   - reflected, expanded, contracted
+  - The worse point is replaced by the best point of above three types points.
+  - Otherwise, the simplex shrink. 
 
 - Simulated annealing 
 
@@ -314,10 +316,20 @@ A 'good' heuristic can be powerful only it is a 'good' quality. It should be **a
     > Optimization: $min_\textbf wL(\textbf w) = \frac{1}{2}\sum_{n=1}^{N}[y^{n} -\textbf w^T\textbf x^n]^2$
     >
     > - closed-form solution:  $\textbf w = (\textbf X^T\textbf X)^{-1}\textbf  X^T \textbf y$ 
-    > - (how about the solution when adding the regularization) :question::question::question:**$\textbf w = (\textbf X^T\textbf X+\lambda I)^{-1}\textbf  X^T \textbf y$**
-    > - Iterative Solution
     >
-    > Over-fitting for MLR: Regularization: $min_wL_{tr}(w) + \lambda \Omega(w)$ and $\Omega(w) = \sum_i|w_i|^p$
+    > - (how about the solution when adding the regularization) :question::question::question:**$\textbf w = (\textbf X^T\textbf X+\lambda I)^{-1}\textbf  X^T \textbf y$**
+    >   $$
+    >   \begin{align}
+    >   &\mathbf {Y =  Xw} \\
+    >   &\mathbf {X^TY  = X^T X w} \\
+    >   &\mathbf{w = (X^TX)^{-1}X^TY}
+    >   \end{align}
+
+    >   $$
+    >
+    >   - Iterative Solution
+    >
+    >   Over-fitting for MLR: Regularization: $min_wL_{tr}(w) + \lambda \Omega(w)$ and $\Omega(w) = \sum_i|w_i|^p$
 
   - Multivariate Linear Classification (MLC)
 
