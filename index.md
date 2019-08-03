@@ -19,6 +19,11 @@ Text Book: 《Pattern Recognition Machine Learning》,  Bishop
 
 <br>
 
+### 随便写写
+
+1. [功利主义的公平性与正当性 ](essays/bolg1.html)
+
+
 ### Source 
 
 1. Support Vector Machine   [📖](notes/支持向量机通俗导论（理解SVM的三层境界）Latex版.pdf)
